@@ -18,6 +18,11 @@
 	<div class='search-bar'><input class='search-key' type="text"/></div>
 	<ul class='employee-list'></ul>
 </script>
+<script id="employee-li-tpl" type="text/x-handlebars-template">
+    {{#.}}
+    <li><a href="#employees/{{this.id}}">{{this.firstName}} {{this.lastName}}<br/>{{this.title}}</a></li>
+    {{/.}}
+</script>
 
 </body>
 </html>
